@@ -1,0 +1,564 @@
+
+Testing the BE
+=====================================================================================
+=====================================================================================
+
+
+Pizza Menu Functionalities 
+==========================
+
+Request 
+
+curl -v "http://127.0.0.1:9764/pizzashop-rs_1.0/services/menu/pizza/all/"
+
+Response 
+
+[
+    {
+        "id": 1,
+        "name": "Margherita",
+        "price": 25.0,
+        "toppings": [
+            {
+                "id": 7112,
+                "name": "Mozzarella Cheese",
+                "extraPrice": 1.0,
+                "category": "VEGETARIAN"
+            },
+            {
+                "id": 5803,
+                "name": "Tomato",
+                "extraPrice": 1.0,
+                "category": "VEGETARIAN"
+            }
+        ],
+        "extras": [],
+        "size": "LARGE",
+        "crust": "PAN"
+    },
+    {
+        "id": 2,
+        "name": "Margherita",
+        "price": 25.0,
+        "toppings": [
+            {
+                "id": 7112,
+                "name": "Mozzarella Cheese",
+                "extraPrice": 1.0,
+                "category": "VEGETARIAN"
+            },
+            {
+                "id": 5803,
+                "name": "Tomato",
+                "extraPrice": 1.0,
+                "category": "VEGETARIAN"
+            }
+        ],
+        "extras": [],
+        "size": "SMALL",
+        "crust": "PAN"
+    },
+    {
+        "id": 3,
+        "name": "Margherita",
+        "price": 62.5,
+        "toppings": [
+            {
+                "id": 7112,
+                "name": "Mozzarella Cheese",
+                "extraPrice": 1.0,
+                "category": "VEGETARIAN"
+            },
+            {
+                "id": 5803,
+                "name": "Tomato",
+                "extraPrice": 1.0,
+                "category": "VEGETARIAN"
+            }
+        ],
+        "extras": [],
+        "size": "LARGE",
+        "crust": "THIN"
+    },
+    {
+        "id": 4,
+        "name": "Margherita",
+        "price": 62.5,
+        "toppings": [
+            {
+                "id": 7112,
+                "name": "Mozzarella Cheese",
+                "extraPrice": 1.0,
+                "category": "VEGETARIAN"
+            },
+            {
+                "id": 5803,
+                "name": "Tomato",
+                "extraPrice": 1.0,
+                "category": "VEGETARIAN"
+            }
+        ],
+        "extras": [],
+        "size": "SMALL",
+        "crust": "THIN"
+    },
+    {
+        "id": 5,
+        "name": "Hawaiian",
+        "price": 30.0,
+        "toppings": [
+            {
+                "id": 7112,
+                "name": "Mozzarella Cheese",
+                "extraPrice": 1.0,
+                "category": "VEGETARIAN"
+            },
+            {
+                "id": 5803,
+                "name": "Tomato",
+                "extraPrice": 1.0,
+                "category": "VEGETARIAN"
+            }
+        ],
+        "extras": [],
+        "size": "LARGE",
+        "crust": "PAN"
+    },
+    {
+        "id": 6,
+        "name": "Hawaiian",
+        "price": 30.0,
+        "toppings": [
+            {
+                "id": 7112,
+                "name": "Mozzarella Cheese",
+                "extraPrice": 1.0,
+                "category": "VEGETARIAN"
+            },
+            {
+                "id": 5803,
+                "name": "Tomato",
+                "extraPrice": 1.0,
+                "category": "VEGETARIAN"
+            }
+        ],
+        "extras": [],
+        "size": "SMALL",
+        "crust": "PAN"
+    },
+    {
+        "id": 7,
+        "name": "Hawaiian",
+        "price": 75.0,
+        "toppings": [
+            {
+                "id": 7112,
+                "name": "Mozzarella Cheese",
+                "extraPrice": 1.0,
+                "category": "VEGETARIAN"
+            },
+            {
+                "id": 5803,
+                "name": "Tomato",
+                "extraPrice": 1.0,
+                "category": "VEGETARIAN"
+            }
+        ],
+        "extras": [],
+        "size": "LARGE",
+        "crust": "THIN"
+    },
+    {
+        "id": 8,
+        "name": "Hawaiian",
+        "price": 75.0,
+        "toppings": [
+            {
+                "id": 7112,
+                "name": "Mozzarella Cheese",
+                "extraPrice": 1.0,
+                "category": "VEGETARIAN"
+            },
+            {
+                "id": 5803,
+                "name": "Tomato",
+                "extraPrice": 1.0,
+                "category": "VEGETARIAN"
+            }
+        ],
+        "extras": [],
+        "size": "SMALL",
+        "crust": "THIN"
+    }
+]
+
+
+Request 
+
+curl -v "http://127.0.0.1:9764/pizzashop-rs_1.0/services/menu/pizza/all/"
+
+Response 
+
+
+[
+    {
+        "id": 1,
+        "name": "Margherita",
+        "price": 25.0,
+        "toppings": [
+            {
+                "id": 7112,
+                "name": "Mozzarella Cheese",
+                "extraPrice": 1.0,
+                "category": "VEGETARIAN"
+            },
+            {
+                "id": 5803,
+                "name": "Tomato",
+                "extraPrice": 1.0,
+                "category": "VEGETARIAN"
+            }
+        ],
+        "extras": [],
+        "size": "LARGE",
+        "crust": "PAN"
+    },
+    {
+        "id": 2,
+        "name": "Margherita",
+        "price": 25.0,
+        "toppings": [
+            {
+                "id": 7112,
+                "name": "Mozzarella Cheese",
+                "extraPrice": 1.0,
+                "category": "VEGETARIAN"
+            },
+            {
+                "id": 5803,
+                "name": "Tomato",
+                "extraPrice": 1.0,
+                "category": "VEGETARIAN"
+            }
+        ],
+        "extras": [],
+        "size": "SMALL",
+        "crust": "PAN"
+    },
+    {
+        "id": 5,
+        "name": "Hawaiian",
+        "price": 30.0,
+        "toppings": [
+            {
+                "id": 7112,
+                "name": "Mozzarella Cheese",
+                "extraPrice": 1.0,
+                "category": "VEGETARIAN"
+            },
+            {
+                "id": 5803,
+                "name": "Tomato",
+                "extraPrice": 1.0,
+                "category": "VEGETARIAN"
+            }
+        ],
+        "extras": [],
+        "size": "LARGE",
+        "crust": "PAN"
+    },
+    {
+        "id": 6,
+        "name": "Hawaiian",
+        "price": 30.0,
+        "toppings": [
+            {
+                "id": 7112,
+                "name": "Mozzarella Cheese",
+                "extraPrice": 1.0,
+                "category": "VEGETARIAN"
+            },
+            {
+                "id": 5803,
+                "name": "Tomato",
+                "extraPrice": 1.0,
+                "category": "VEGETARIAN"
+            }
+        ],
+        "extras": [],
+        "size": "SMALL",
+        "crust": "PAN"
+    }
+]
+
+
+Pizza Ordering Functionalities 
+==============================
+
+Add Order 
+---------
+Request 
+curl -X POST -d @addOrder.json http://localhost:9764/pizzashop-rs_1.0/services/menu/order --header "Content-Type:application/json"
+
+Response 
+
+{"id": "1380777045364", "items": [
+    {
+        "itemId": 2320,
+        "id": 1,
+        "qty": 2
+    },
+    {
+        "itemId": 3998,
+        "id": 2,
+        "qty": 1
+    }
+], "total": 75.0, "paid": false, "status": "RECEIVED"}
+
+
+Get Order Status 
+----------------
+
+Request 
+curl -v "http://localhost:9764/pizzashop-rs_1.0/services/menu/order/1380777045364"
+
+Response 
+
+{"id": "1380777045364", "items": [
+    {
+        "itemId": 2320,
+        "id": 1,
+        "qty": 2
+    },
+    {
+        "itemId": 3998,
+        "id": 2,
+        "qty": 1
+    }
+], "total": 75.0, "paid": false, "status": "RECEIVED"}
+
+
+Update Order 
+------------
+
+
+Request 
+
+curl -X PUT -d @updateOrder.json "http://localhost:9764/pizzashop-rs_1.0/services/menu/order/1380777045364" --header "Content-Type:application/json"
+
+Response 
+
+{"id": "1380777045364", "items": [
+    {
+        "itemId": 3254,
+        "id": 1,
+        "qty": 5
+    },
+    {
+        "itemId": 962,
+        "id": 3,
+        "qty": 1
+    }
+], "total": 187.5, "paid": false, "status": "RECEIVED"}
+
+
+
+Delete Order	
+------------
+
+Request
+curl -X DELETE "http://localhost:9764/pizzashop-rs_1.0/services/menu/order/1380777045364"
+
+Response 
+{"id": "1380777045364", "items": [
+    {
+        "itemId": 3254,
+        "id": 1,
+        "qty": 5
+    },
+    {
+        "itemId": 962,
+        "id": 3,
+        "qty": 1
+    }
+], "total": 187.5, "paid": false, "status": "CANCELLED"}
+
+
+
+
+Purchasing Functionalities 
+==========================
+
+curl -X POST -d @purchase.json "http://localhost:9764/pizzashop-rs_1.0/services/menu/order/purchase/1380780071830" --header "Content-Type:application/json"
+
+{"id": "1380780071830", "items": [
+    {
+        "itemId": 7154,
+        "id": 1,
+        "qty": 2
+    },
+    {
+        "itemId": 7022,
+        "id": 2,
+        "qty": 1
+    }
+], "total": 75.0, "paid": true, "status": "PAID"}
+
+
+
+PizzaShop Admin Functionalities 
+===============================
+
+curl -v -X POST -d @addPizza.json http://localhost:9764/pizzashop-rs_1.0/services/menu/pizza --header "Content-Type:application/json"
+
+{"pizza": {
+    "id": 1023,
+    "name": "Meat Sizzler",
+    "price": 500,
+    "toppings": {
+        "topping": [
+            {
+                "category": "NONVEG",
+                "extraPrice": 4,
+                "id": 9999,
+                "name": 9999
+            },
+            {
+                "category": "VEGETARIAN",
+                "extraPrice": 4,
+                "id": 9998,
+                "name": 9998
+            },
+            {
+                "category": "VEGETARIAN",
+                "extraPrice": 3,
+                "id": 9997,
+                "name": 9997
+            },
+            {
+                "category": "NONVEG",
+                "extraPrice": 3,
+                "id": 9996,
+                "name": 9996
+            },
+            {
+                "category": "NONVEG",
+                "extraPrice": 4,
+                "id": 9995,
+                "name": 9995
+            }
+        ]
+    }
+}}
+
+
+
+
+
+Testing ESB API
+=====================================================================================
+=====================================================================================
+
+
+
+
+curl "http://127.0.0.1:8280/pizzashop/api/menu/pizza"
+curl "http://127.0.0.1:8280/pizzashop/api/menu/pizza?val=thin&type=crust"
+
+
+curl -X POST -d @addOrder.json http://127.0.0.1:8280/pizzashop/api/order --header "Content-Type:application/json"
+curl -v "http://127.0.0.1:8280/pizzashop/api/order/1380820638568"
+curl -X PUT -d @updateOrder.json http://127.0.0.1:8280/pizzashop/api/order/1380820638568 --header "Content-Type:application/json"
+curl -X DELETE http://127.0.0.1:8280/pizzashop/api/order/1380820638568
+
+
+
+curl -X POST -d @purchase_api.json "http://127.0.0.1:8280/pizzashop/api/purchase/1380821031513" --header "Content-Type:application/json"
+
+
+Testing ESB Proxy Service
+=====================================================================================
+=====================================================================================
+
+Send the following SOAP message to http://127.0.0.1:8280/servicesPizzaAdminService. 
+
+
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <pizza>
+         <name>Meat Sizzler</name>
+         <price>500.0</price>
+         <toppings>
+            <topping>
+               <id>9999</id>
+               <name>Steak</name>
+               <extraPrice>4.00</extraPrice>
+               <category>NONVEG</category>
+            </topping>
+            <topping>
+               <id>9998</id>
+               <name>Sun Dried Tomato</name>
+               <extraPrice>4.00</extraPrice>
+               <category>VEGETARIAN</category>
+            </topping>
+            <topping>
+               <id>9997</id>
+               <name>Mixed Peppers</name>
+               <extraPrice>3.00</extraPrice>
+               <category>VEGETARIAN</category>
+            </topping>
+            <topping>
+               <id>9996</id>
+               <name>Cajun Chicken</name>
+               <extraPrice>3.00</extraPrice>
+               <category>NONVEG</category>
+            </topping>
+            <topping>
+               <id>9995</id>
+               <name>Chorizo Sausage</name>
+               <extraPrice>4.00</extraPrice>
+               <category>NONVEG</category>
+            </topping>
+         </toppings>
+      </pizza>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+
+
+
+
+
+
+&lt;payloadFactory media-type=&quot;json&quot;&gt;
+            &lt;format&gt;{ &quot;pizza&quot;: {    &quot;name&quot;: &quot;$1&quot;,    &quot;price&quot;: $2,    &quot;topping&quot;: $3}}&lt;/format&gt;
+            &lt;args&gt;
+               &lt;arg evaluator=&quot;xml&quot; expression=&quot;//pizza/name&quot;/&gt;
+               &lt;arg evaluator=&quot;xml&quot; expression=&quot;//pizza/price&quot;/&gt;
+               &lt;arg evaluator=&quot;json&quot; expression=&quot;pizza.toppings.topping&quot;/&gt;
+            &lt;/args&gt;
+&lt;/payloadFactory&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
